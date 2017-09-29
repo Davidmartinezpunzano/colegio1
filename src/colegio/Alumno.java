@@ -9,9 +9,7 @@ package colegio;
  *
  * @author 33407.joan23
  */
-public class Alumno {
-private String nombre;   
-private String apellido;
+public class Alumno extends Persona {
 
 private float notamatematicas;
 private float notaedfisica;

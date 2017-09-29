@@ -215,7 +215,8 @@ public class VistaColegio extends javax.swing.JFrame {
         
         float resultado = alu.notamedia(alu.getNotamatematicas(),alu.getNotaedfisica(), alu.getNotacatalan());
         this.jt_media.setText(String.valueOf(resultado));
-        this.jt_maxima.setText(String.valueOf(alu.notamaxima(alu.getNotamatematicas(), alu.getNotacatalan(), alu.getNotaedfisica())));
+        float result= alu.notamaxima(alu.getNotacatalan(), alu.getNotaedfisica(), alu.getNotamatematicas());
+        this.jt_maxima.setText(String.valueOf(result));
         
     }
     public static void main(String args[]) {
